@@ -19,7 +19,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec albert
 exec --no-startup-id nm-applet
-exec ~/.config/kanata/kanata --cfg ~/.config/kanata/kanata.kbd
+exec_always ~/.config/kanata/kanata --cfg ~/.config/kanata/kanata.kbd
 exec_always feh --bg-fill ~/.config/wallpapers/wallpaper.jpg
 
 set $refresh_i3status killall -SIGUSR1 i3status
