@@ -15,3 +15,6 @@
 
 !doom/
 !doom/**
+
+!tmux/
+!tmux/**
