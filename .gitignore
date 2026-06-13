@@ -12,3 +12,9 @@
 
 !sioyek/
 !sioyek/**
+
+!doom/
+!doom/**
+
+!tmux/
+!tmux/**

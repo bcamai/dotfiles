@@ -1,19 +1,10 @@
 vim.o.number = true
 vim.o.relativenumber = true
-
 vim.o.wrap = false
-vim.g.mapleader = " "
-
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
-vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
-vim.keymap.set({ 'n', 'v', 'x' }, '<leader>p', '"+p<CR>')
-vim.keymap.set({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
-
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.wrap = false
-vim.o.tabstop = 4
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+-- vim.o.showtabline = 2
+vim.o.signcolumn = 'yes'
 vim.o.swapfile = false
 vim.o.winborder = "rounded"
 vim.g.mapleader = " "
@@ -31,6 +22,7 @@ vim.keymap.set({ 'n', 'v', 'x' }, '<leader>p', '"+p<CR>')
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>d', '"+d<CR>')
 -- vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>pv', '<CMD>Oil<CR>')
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
 
 
 vim.pack.add({
@@ -46,9 +38,6 @@ vim.pack.add({
 	{ src = "https://github.com/mbbill/undotree" },
 	{ src = "https://github.com/theprimeagen/harpoon" },
 	-- { src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects" },
-	{ src = "https://github.com/mfussengger/nvim-dap" },
-	{ src = "https://github.com/rcarriga/nvim-dap-ui" },
-	{ src = "https://github.com/theHamsta/nvim-dap-virtual-text" },
 	{ src = "https://github.com/nvim-neotest/nvim-nio" },
 })
 
