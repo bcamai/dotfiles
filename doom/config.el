@@ -75,6 +75,21 @@
 ;; they are implemented.
 
 
+(random t)
+
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
+(setq fancy-splash-image "~/.config/pictures/emacs/gnu_color.png")
+;;(setq fancy-splash-image
+;;      (nth (random 2)
+;;           '("~/.config/pictures/emacs/gnu_color.png"
+;;             "~/.config/pictures/emacs/emacs-logo-vim.png")))
+(add-hook! '+doom-dashboard-functions :append
+  (insert "\n" (+doom-dashboard--center +doom-dashboard--width "hello")))
+
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-footer)
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
+
+
 ;; I'm illerate so i copied someone's literate config
 ;; TODO personalize it more
 ;; https://joshblais.com/blog/literate-doom-emacs-config/
