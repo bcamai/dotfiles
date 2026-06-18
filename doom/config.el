@@ -42,6 +42,13 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
+(load (expand-file-name "~/projects/emacs-dict/emacs-dict.el"))
+
+(map! :leader
+      :prefix "o w"
+      :desc "Random" "r" #'(lambda ()
+                             (interactive)
+                             (my-dict-lookup-word "~/base/org/random/dict.org" "Random")))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `with-eval-after-load' block, otherwise Doom's defaults may override your
